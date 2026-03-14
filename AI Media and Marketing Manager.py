@@ -1,10 +1,12 @@
 import datetime
 
-# Vvygenerovaných AI obrázků pro klienta (např. pro Instagram)
+# Simulace vygenerovaných AI obrázků pro klienta (např. pro Instagram)
 ai_obsah = [
     {"soubor": "produkty_01.jpg", "tema": "moderní kávovar", "platforma": "Instagram"},
     {"soubor": "lifestyle_02.jpg", "tema": "člověk s notebookem v kavárně", "platforma": "LinkedIn"},
-    {"soubor": "reklama_03.jpg", "tema": "detailní záběr na zrnkovou kávu", "platforma": "Facebook"}
+    {"soubor": "reklama_03.jpg", "tema": "detailní záběr na zrnkovou kávu", "platforma": "Facebook"},
+    {"soubor": "produkty_03.jpg", "tema": "záběr namoderní umění", "platforma": "instagram"},
+    {"soubor": "produkty_01.jpg", "tema": "Reklama na tvurbu videa", "platforma": "Facebook"}
 ]
 
 def generuj_marketingovy_plan(data):
@@ -16,7 +18,7 @@ def generuj_marketingovy_plan(data):
         f.write("="*40 + "\n\n")
         
         for polozka in data:
-            # AI Automatické generování hashtagů a popisků
+            # AI simulace: Automatické generování hashtagů a popisků
             hashtagy = f"#{polozka['tema'].replace(' ', '')} #AIart #Marketing2024"
             popisek = f"Příspěvek pro {polozka['platforma']} na téma {polozka['tema']}."
             
