@@ -4,13 +4,13 @@
 print("--- Vítej v Palacinkátoru ---")
 
 # 1. VSTUPY OD UŽIVATELE
-# Pamatuj: input() vrací text, proto ho musíme převést na int (celé číslo)
+#input() vrací text, proto ho musíme převést na int (celé číslo)
 pocet_palacinek = int(input("Kolik palačinek jsi dneska nasmažil? "))
 pocet_lidi = int(input("Mezi kolik lidí je chceš rozdělit? "))
 
 print("-" * 30)
 
-# 2. VÝPOČTY (Tady používáme ty dvě lomítka a procento)
+# 2. VÝPOČTY 
 # Kolik dostane každý celých kusů
 na_osobu = pocet_palacinek // pocet_lidi
 
