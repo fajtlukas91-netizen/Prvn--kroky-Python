@@ -1,10 +1,12 @@
 import datetime
 
-# Databáze zakázek (seznam slovníků 
+# Databáze zakázek (seznam slovníků - v praxi se to takhle dělá)
 zakazky = [
     {"klient": "Autoservis Libeň", "prace": "Webová vizitka", "cena": 4500},
     {"klient": "Pekárna u lva", "prace": "Správa Facebooku", "cena": 2000},
-    {"klient": "Instalatér Marek", "prace": "Čištění databáze", "cena": 3000}
+    {"klient": "Instalatér Marek", "prace": "Čištění databáze", "cena": 3000},
+    {"klient": "kanál na YouTube", "prace": "Nahrávání videí", "cena": 7000},
+    {"klient": "E-shop s oblečením", "prace": "SEO optimalizace", "cena": 3500 }
 ]
 
 def vytvor_report(seznam_zakazek):
@@ -23,7 +25,7 @@ def vytvor_report(seznam_zakazek):
             
         f.write(f"\n" + "-"*50 + "\n")
         f.write(f"CELKOVÝ POTENCIÁLNÍ VÝDĚLEK: {celkovy_prijem} Kč\n")
-        f.write(f"CHYBÍ DO CÍLE (17 000 Kč): {17000 - celkovy_prijem} Kč\n")
+        f.write(f"CHYBÍ DO CÍLE (20 000 Kč): {20000 - celkovy_prijem} Kč\n")
 
     return soubor_jmeno, celkovy_prijem
 
