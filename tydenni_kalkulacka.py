@@ -6,7 +6,7 @@ print("--- Vítej v týdenní kalkulačce ---")
 # Vstup od uživatele (převádíme text na celé číslo)
 pocet_dni = int(input("Zadej celkový počet dní pro analýzu: "))
 
-# Výpočet pomocí našich oblíbených operátorů // a %
+# Výpočet pomocí // a %
 tydny = pocet_dni // 7      # Zjistí celé týdny
 zbytek = pocet_dni % 7      # Zjistí zbývající dny
 
